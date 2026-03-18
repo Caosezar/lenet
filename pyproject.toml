@@ -1,9 +1,18 @@
 [project]
 name = "lenet"
 version = "0.1.0"
-description = "Add your description here"
+description = "Expression Recognition API with FastAPI + React Frontend"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn[standard]>=0.24.0",
+    "mediapipe>=0.10.32",
+    "numpy>=2.4.3",
+    "opencv-python>=4.13.0.92",
+    "pillow>=12.1.1",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.1.0",
     "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.6",
 ]

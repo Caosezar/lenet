@@ -1,0 +1,51 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#121212] text-[#E0E0E0] font-sans antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#1a1a1a];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#444444] rounded hover:bg-[#666666];
+}
+
+/* Utility classes */
+.text-secondary {
+  @apply text-[#B0B0B0];
+}
+
+.text-tertiary {
+  @apply text-[#888888];
+}
+
+.border-divider {
+  @apply border-[#444444];
+}
+
+/* Terminal-like styling */
+.terminal-block {
+  @apply font-jetbrains bg-[#0a0a0a] rounded-lg border border-[#444444] shadow-xl;
+}
